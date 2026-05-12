@@ -77,6 +77,9 @@
   .progress-bar .fill { height: 100%; border-radius: 3px; }
   .fill.gold { background: linear-gradient(90deg, #8a7228, #d4af37); }
   .progress-label { display: flex; justify-content: space-between; font-size: 13px; color: #8a7e68; margin-top: 6px; }
+  .em-num { font-size: 22px; font-weight: 700; color: #d4af37; letter-spacing: 1px; }
+  .em-pct { font-size: 20px; font-weight: 700; color: #7fc97a; }
+  .em-pct-gold { font-size: 20px; font-weight: 700; color: #d4af37; }
 
   .timeline { position: relative; padding-left: 30px; margin: 20px 0 30px; }
   .timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 1px; background: rgba(212,175,55,0.2); }
@@ -191,7 +194,7 @@
   <div class="progress-bar-wrap">
     <div class="progress-label"><span>合同目标完成进度</span><span>3,995万 / 3,500万</span></div>
     <div class="progress-bar"><div class="fill gold" style="width:100%;"></div></div>
-    <div class="progress-label" style="justify-content:flex-end;color:#d4af37;">▲ 超额完成 14.15%</div>
+    <div class="progress-label" style="justify-content:flex-end;"><span class="em-pct">▲ 超额完成 14.15%</span></div>
   </div>
 </div>
 
@@ -209,7 +212,7 @@
     <div class="compare-card" style="border-color:rgba(127,201,122,0.2);">
       <h4 style="color:#7fc97a;">2025–2026合同年完成</h4>
       <div class="big-num">3,995<span class="unit">万</span></div>
-      <div class="pct-label pct-green">全口径完成率 114.15% ✅</div>
+      <div class="pct-label"><span class="em-pct">全口径完成率 114.15% ✅</span></div>
     </div>
   </div>
 
@@ -230,14 +233,14 @@
           <td style="font-size:12px;color:#8a7e68;">美团点评+高德+抖音</td>
           <td class="num-cell highlight-row">3,995万</td>
           <td class="num-cell">3,500万</td>
-          <td class="pct-cell success-row">114.15%</td>
+          <td class="pct-cell"><span class="em-pct">114.15%</span></td>
         </tr>
         <tr>
           <td>② 剔除争议渠道核销</td>
           <td style="font-size:12px;color:#8a7e68;">全口径 - 直播核销308万 - 买单核销445万</td>
           <td class="num-cell highlight-row">3,241万</td>
           <td class="num-cell">3,200万</td>
-          <td class="pct-cell" style="color:#d4af37;">101.29%</td>
+          <td class="pct-cell"><span class="em-pct-gold">101.29%</span></td>
         </tr>
       </tbody>
     </table>
@@ -327,10 +330,9 @@
           <td><strong>已收服务费合计</strong></td>
           <td class="num-cell" style="font-size:16px;color:#d4af37;font-weight:700;">282,601.89</td>
         </tr>
-        <tr><td style="color:#e89a6a;">待收：4月服务费</td><td class="num-cell" style="color:#e89a6a;">20,000.00</td></tr>
         <tr><td>美团服务费返还总额（合同约定归丰火）</td><td class="num-cell">679,364.15</td></tr>
-        <tr><td style="padding-left:36px;font-size:13px;color:#8a7e68;">剔除争议渠道核销后待收项目费用</td><td class="num-cell" style="font-size:13px;color:#d4af37;">345,367.00</td></tr>
-        <tr><td style="padding-left:36px;font-size:13px;color:#8a7e68;">差额（尚待结算）</td><td class="num-cell" style="font-size:13px;color:#b8a88a;">62,765.11</td></tr>
+        <tr><td style="padding-left:36px;font-size:13px;color:#8a7e68;">剔除争议渠道核销后待收</td><td class="num-cell" style="font-size:18px;color:#d4af37;font-weight:700;">345,367.00</td></tr>
+        <tr><td style="color:#e89a6a;font-weight:500;">待收：2026年4月服务费</td><td class="num-cell" style="color:#e89a6a;">20,000.00</td></tr>
       </tbody>
     </table>
   </div>
@@ -377,7 +379,7 @@
         <tr><td></td><td>品牌培训材料制作</td><td style="font-size:13px;color:#8a7e68;">品牌手册、培训课件、SOP文档制作</td></tr>
         <tr style="border-top:1px solid rgba(212,175,55,0.2);background:rgba(212,175,55,0.05);">
           <td><strong style="font-size:15px;">报价</strong></td>
-          <td colspan="2" style="font-size:15px;color:#d4af37;font-weight:700;">
+          <td colspan="2" style="font-size:20px;color:#d4af37;font-weight:700;letter-spacing:2px;">
             基础服务费 16,000 元/月/店
           </td>
         </tr>
@@ -476,12 +478,12 @@
         <tr>
           <td>合同约定全口径</td>
           <td style="font-size:13px;color:#8a7e68;">美团点评 + 高德地图 + 抖音</td>
-          <td class="pct-cell success-row">3,995万 / 3,500万 = 114.15%</td>
+          <td class="pct-cell"><span class="em-pct">114.15%</span></td>
         </tr>
         <tr>
           <td>调整口径</td>
           <td style="font-size:13px;color:#8a7e68;">全口径 - 直播核销308万 - 买单核销445万</td>
-          <td class="pct-cell" style="color:#d4af37;">3,241万 / 3,200万 = 101.29%</td>
+          <td class="pct-cell"><span class="em-pct-gold">101.29%</span></td>
         </tr>
       </tbody>
     </table>
@@ -489,10 +491,10 @@
 
   <div style="background:rgba(212,175,55,0.06);border-radius:8px;padding:24px;">
     <h4 style="color:#d4af37;margin-bottom:12px;font-size:15px;">📋 汇报总结</h4>
-    <ol style="padding-left:20px;color:#d8d0c0;font-size:14px;line-height:2;">
-      <li><strong>交易目标全面达成</strong>：合同全口径3,995万，超额完成14.15%；调整口径3,241万，超额完成1.29%</li>
-      <li><strong>品牌效益显著提升</strong>：对比2024年2,500万基线，同比增长59.8%</li>
-      <li><strong>品牌方额外价值95万</strong>：合同年间品牌方累计获得平台补贴福利95万元</li>
+    <ol style="padding-left:20px;color:#d8d0c0;font-size:15px;line-height:2.2;">
+      <li><strong>交易目标全面达成</strong>：合同全口径 <span class="em-num">3,995万</span>，超额完成 <span class="em-pct">14.15%</span>；调整口径 <span class="em-num">3,241万</span>，超额完成 <span class="em-pct-gold">1.29%</span></li>
+      <li><strong>品牌效益显著提升</strong>：对比2024年2,500万基线，同比增长 <span class="em-pct">59.8%</span></li>
+      <li><strong>品牌方额外价值</strong>：合同年累计获得平台补贴福利 <span class="em-num">95万</span></li>
     </ol>
   </div>
 
